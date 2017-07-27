@@ -1,6 +1,8 @@
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 
 public class TestCurrency {
 
@@ -40,4 +42,11 @@ public class TestCurrency {
 		assertEquals(15, five.amount);
 
 	}
+
+	@Test
+	public void testEquality(){
+		assertTrue(new Dollar(5).equals(new Dollar(5)));
+		assertFalse(new Dollar(5).equals(new Dollar(4)));
+	}
+
 }
