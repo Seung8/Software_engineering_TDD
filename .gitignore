@@ -1,0 +1,5 @@
+.gradle/
+build/
+*.swp
+.idea/
+.DS_Store
