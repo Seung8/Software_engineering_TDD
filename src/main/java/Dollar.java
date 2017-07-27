@@ -12,6 +12,6 @@ public class Dollar {
 	public Dollar times(int multiplier){
 		// void 는 리턴 값이 없음을 뜻함
 		amount = original * multiplier;
-		return null;
+		return new Dollar(10);
 	}
 }
